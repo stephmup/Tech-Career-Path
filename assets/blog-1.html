@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PostgreSQL Database Administrator Roadmap</title>
+
+
+</head>
+
+<body style="background-color:hsl(210, 38%, 95%);">
+    <div style="margin:50px 350px 50px 350px; font-family: Geneva; ">
+        <h1 style="text-align: center;">PostgreSQL Database Administrater Learning Curve, For Beginners In 2022</h1>
+        <br><br>
+        <h2 style="text-align: center;">Detailed resources and a clear path are provided here, along with all you need to know to get started!</h2>
+        <br><br><br>
+
+        <h3>Some Benefits Of Learning PostgreSQL.</h3>
+        <br>
+        <li style="font-size: 21px">Object-oriented database features.</li>
+        <li style="font-size: 21px">SQL standards conformance.</li>
+        <li style="font-size: 21px">Open-source development and community.</li>
+        <br>
+        <h3>1. You Must Address These basic RDBMS Concepts.</h3>
+        <h3>Learn the fundamental concepts behind RDBMSs and Postgres.</h3>
+        <li style="font-size: 21px">Object model: data types, columns, rows, tables, schemas, databases, queries.</li>
+        <li style="font-size: 21px">Relational model: domains, attributes, tuples, relations, constraints, NULL.</li>
+        <li style="font-size: 21px">Databases high-level concepts: ACID, MVCC, transactions, write-ahead log, query processing.</li>
+        <br>
+        <h3>Some PostgreSQL REFs:</h3>
+        <br>
+        <li style="font-size: 21px">SQL and Relational Theory - Christopher J. Date, 2009</li>
+        <li style="font-size: 21px">Database Design and Relational Theory - Christopher J. Date, 2012</li>
+        <br><br>
+        <h3>2. Learn To install and run PostgreSQL</h3>
+        <li style="font-size: 21px">Using package managers (APT, YUM, etc.)</li>
+        <li style="font-size: 21px">Using docker.</li>
+        <li style="font-size: 21px">Managing Postgres service using pg_ctl, or OS-specific tools (like pg_ctlcluster).</li>
+        <li style="font-size: 21px">Connect to Postgres using psql.</li>
+        <br>
+        <h3>Links:</h3>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://www.postgresql.org/download/">Official Download & Install Instructions.</a>
+        </li>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://hub.docker.com/_/postgres">Official Docker Images.</a>
+        </li>
+        <br><br>
+        <h3>3. Learn SQL Concepts:</h3>
+        <h3>Learn To Use The psql Client To Run Queries And Gain Practical Knowledge On How To Create And Manipulate Database Objects.</h3>
+        <li style="font-size: 21px">Understand basic data types.</li>
+        <li style="font-size: 21px">DML queries: querying data, modifying data, filtering data, joining tables.</li>
+        <li style="font-size: 21px">Advanced topics: transactions, CTE, subqueries, lateral join, grouping, set operations.</li>
+        <li style="font-size: 21px">DDL queries: managing tables and schemas (create, alter, drop).</li>
+        <li style="font-size: 21px">Import and export data using COPY.</li>
+        <br>
+        <h3>Links:</h3>
+
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://www.db-fiddle.com">DB Fiddle.</a>
+        </li>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://www.postgresqltutorial.com">PostgreSQL Tutorial.</a>
+        </li>
+        <br><br>
+        <h3>4. Learn To Configure Postgres</h3>
+        <h3>Gain knowledge of the key configuration options for Postgres.</h3>
+        <li style="font-size: 21px">Resources usage.</li>
+        <li style="font-size: 21px">Write-ahead Log.</li>
+        <li style="font-size: 21px">Checkpoints and Background Writer.</li>
+        <li style="font-size: 21px">Cost-based vacuum and auto-vacuum.</li>
+        <li style="font-size: 21px">Replication.</li>
+        <li style="font-size: 21px">Query planner.</li>
+        <li style="font-size: 21px">Reporting, logging and statistics.</li>
+        <li style="font-size: 21px">Adding extra extensions.</li>
+        <br>
+        <h3>Links:</h3>
+
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://postgresqlco.nf">Postgresqlco.nf.</a>
+        </li>
+        <br><br>
+        <h3>5. Learn Postgres security concepts.</h3>
+        <h3>Learn about fundamental security ideas and typical methods for deploying secure setups.</h3>
+        <li style="font-size: 21px">Authentication models, roles, pg_hba.conf, SSL settings.</li>
+        <li style="font-size: 21px">Objects privileges: grant/revoke, default privileges.</li>
+        <li style="font-size: 21px">Advanced topics - row-level security, selinux.</li>
+        <br>
+        <h3>Links:</h3>
+
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://www.postgresql.org/docs/current/client-authentication.html">Client authentication.</a>
+        </li>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://www.postgresql.org/docs/current/user-manag.html">Roles and users managements.</a>
+        </li>
+        <br><br>
+        <h3>6. Develop infrastructure DBA skills</h3>
+        <h3>Learn how to deploy, expand, maintain, and support Postgres installations as well as software from the Postgres ecosystem's third party.</h3>
+        <li style="font-size: 21px">Replication: streaming replication, logical replication.</li>
+        <h3>Backup/recovery tools:</h3>
+        <li style="font-size: 21px">Built-in: pg_dump, pg_dumpall, pg_restore, pg_basebackup.</li>
+        <li style="font-size: 21px">3rd-party: barman, pgbackrest, pg_probackup, WAL-G.</li>
+        <li style="font-size: 21px">Backup validation procedures.</li><br>
+        <h3>Upgrading procedures:</h3>
+        <li style="font-size: 21px">Minor and major upgrades using pg_upgrade.</li>
+        <li style="font-size: 21px">Upgrades using logical replication.</li>
+        <li style="font-size: 21px">Connection pooling:</li> <br>
+        <li style="font-size: 21px">Pgbouncer.</li>
+        <li style="font-size: 21px">Alternatives: Pgpool-II, Odyssey, Pgagroal.</li>
+        <li style="font-size: 21px">Infrastructure monitoring: Prometheus, Zabbix.</li>
+        <br><br>
+        <h3>7. Learn To Automate Routines.</h3>
+        <h3>Develop useful skills, become familiar with automation tools, and automate existing daily routines.</h3>
+        <li style="font-size: 21px">Automation using shell scripts or any other favourite language (Bash, Python, Perl, etc).</li>
+        <li style="font-size: 21px">Configuration management: Ansible, Salt, Chef, Puppet.</li>
+        <br><br>
+        <h3>8. Develop Application DBA skills.</h3>
+        <h3>Learn the theory and acquire practical Postgres application development abilities.</h3>
+        <h3>Migrations:</h3>
+        <li style="font-size: 21px">practical patterns and antipatterns.</li>
+        <li style="font-size: 21px">tools: liquibase, sqitch, language-specific tools.</li>
+        <li style="font-size: 21px">Data import/export, bulk loading and processing.</li><br>
+        <h3>Queues:</h3>
+        <li style="font-size: 21px">practical patterns and anti-patterns.</li>
+        <li style="font-size: 21px">Skytools PGQ.</li>
+        <li style="font-size: 21px">Data partitioning and sharding patterns.</li>
+        <li style="font-size: 21px">Database normalization and normal forms.</li>
+        <h3>BOOKS:</h3>
+        <li style="font-size: 21px">The Art Of PostgreSQL - Dimitri Fontaine, 2020</li>
+        <h3>9. Learn Postgres advanced topics.</h3>
+        <h3>It Is Important To Continuously Extend And Develop Existing Knowledge About Postgres.</h3>
+        <h3>Low level internals:</h3>
+        <li style="font-size: 21px">Processes and memory architecture.</li>
+        <li style="font-size: 21px">Vacuum processing.</li>
+        <li style="font-size: 21px">Buffer management.</li>
+        <li style="font-size: 21px">Lock management.</li>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://www.postgresql.org/docs/current/storage.html">Physical storage and file layout.</a>
+        </li>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://www.postgresql.org/docs/current/catalogs.html">System catalog.</a>
+        </li>
+        <h3>Fine-grained tuning:</h3>
+        <li style="font-size: 21px">Per-user, per-database settings.</li>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://www.postgresql.org/docs/current/sql-createtable.html#SQL-CREATETABLE-STORAGE-PARAMETERS">Storage parameters.</a>
+        </li>
+        <li style="font-size: 21px">Workload-dependant tuning: OLTP, OLAP, HTAP.</li>
+        <h3>Advanced SQL topics:</h3>
+        <li style="font-size: 21px">PL/pgSQL, procedures and functions, triggers</li>
+        <li style="font-size: 21px">Aggregate and window functions</li>
+        <li style="font-size: 21px">Recursive CTE</li>
+        <br>
+        <h3>Links:</h3>
+        <li style="font-size: 21px">
+            <a target="_blank" href="http://www.interdb.jp/pg/index.html">The Internals of PostgreSQL .</a>
+        </li>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://www.postgresql.org/docs/current/plpgsql.html">PL/pgSQL Guide.</a>
+        </li>
+
+        <h3>10. Learn Postgres troubleshooting techniques.</h3>
+        <h3>Learn the fundamentals of troubleshooting tools and develop practical problem-solving abilities.</h3>
+        <h3>Operating system tools:</h3>
+        <li style="font-size: 21px">top (htop, atop).</li>
+        <li style="font-size: 21px">sysstat.</li>
+        <li style="font-size: 21px">iotop</li><br>
+        <h3>Postgres system views:</h3>
+        <li style="font-size: 21px">pg_stat_activity.</li>
+        <li style="font-size: 21px">pg_stat_statements.</li>
+        <h3>Postgres tools:</h3>
+        <li style="font-size: 21px">pgcenter - personal recommendation</li>
+        <h3>Query analyzing:</h3>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://www.postgresql.org/docs/current/sql-explain.html">EXPLAIN.</a>
+        </li>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://explain.depesz.com">Depesz</a> online EXPLAIN visualization tool.
+        </li>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://tatiyants.com/pev/#/plans">PEV</a> online EXPLAIN visualization tool.
+        </li>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://explain.tensor.ru">Tensor</a> online EXPLAIN visualization tool, RU language only
+        </li>
+        <h3>Log analyzing:</h3>
+        <li style="font-size: 21px">pgBadger.</li>
+        <li style="font-size: 21px">Ad-hoc analyzing using grep, awk, sed, etc.</li>
+        <li style="font-size: 21px">External tracing/profiling tools: gdb, strace, perf-tools, ebpf, core dumps.</li>
+        <li style="font-size: 21px">Troubleshooting methods: USE, RED, Golden signals.</li>
+        <h3>Links:</h3>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://www.brendangregg.com/linuxperf.html">Linux Performance</a> by Brendan Gregg.
+        </li>
+        <li style="font-size: 21px">
+            <a target="_blank" href="https://www.brendangregg.com/usemethod.html">PL/pgSQL Guide</a> USE Method.
+        </li>
+        </p>
+
+    </div>
+</body>
+
+</html>
